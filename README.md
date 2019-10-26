@@ -1,3 +1,3 @@
 # java8Practice
 
-### 1. We can stream to array simpley using toArray() method over streams
+### 1. We can convert stream to array simply using toArray() method over streams

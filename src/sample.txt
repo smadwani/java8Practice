@@ -1,0 +1,30 @@
+2019 Goals
+
+1.	Get US Driving License.
+2.	75 lakhs of Saving in Fixed Deposit
+3.	Get AWS/Docker Certification for developer
+4.	Get Java 8 concepts clear for developer
+5.	Get Spring boot certification for developer/architect
+6.	Get all major projects working practiced.
+7.	Get 1 offer by Dec’20.
+
+Oct’2019 – 24th – 27th Target
+1.	Make an excel sheet of all investments
+2.	Go to local DMV this weekend to enquire about the process.
+3.	Get hold of Lambda and cloudformation with practice by Sunday 27th Oct
+4.	Get hold of Janus deployment of ECS.
+5.	Practice atleast 8 java 8 question by Sunday 27th Oct night
+6.	Read what is new in Spring boot 2.
+7.	Finish Twitter project structure by Sunday.
+
+October 24th
+1.	Order White board today
+2.	See janus deployment working as explained by Kai.
+3.	Read about usage of Janus in industry
+4.	What is finto? read about it and get hold of it.
+5.	Finish Pending invoice work by 5 PM.
+6.	One map related java practice question between 9-10, don’t sleep without practicing it
+7.	Finish food preparation by 7.
+8.	Go for walk between 7-8:30.
+
+

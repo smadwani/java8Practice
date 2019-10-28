@@ -15,7 +15,7 @@ public class NthMostOccurringWordInAFile {
         Scanner sc = new Scanner(System.in);
         int nthFrequentNumber = sc.nextInt();
         String [] words = Util.loadFile("sample.txt").split(" ");
-        Map<String, Integer> map = Stream.of(words).collect(Collectors.toMap(Function.identity(), e -> e.split(" ").length , (x, y)-> x+y));
+        Map<String, Integer> map = Stream.of(words).collect(Collectors.toMap(Function.identity(), e -> 1 , (x, y)-> x+y));
         Map<String, Integer> sortedMap = map.entrySet()
                 .stream()
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).collect(

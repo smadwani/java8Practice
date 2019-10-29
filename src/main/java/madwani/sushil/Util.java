@@ -4,8 +4,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.function.Function;
+import java.util.function.IntFunction;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -41,8 +44,23 @@ public class Util {
         }
     }
 
+    public static void print1dArray(int[] array){
+        Arrays.stream(array).forEach(System.out::println);
+    }
+
     public static String readLine(){
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
+    }
+
+    public static int[] swapElementsInArray(int[] arr,int i,int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        return arr;
+    }
+
+    public static int[] convertLineToIntArray(String line) {
+       return Stream.of(line.split(" ")).mapToInt(Integer::parseInt).toArray();
     }
 }

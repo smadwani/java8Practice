@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -38,5 +39,10 @@ public class Util {
             }
             System.out.println();
         }
+    }
+
+    public static String readLine(){
+        Scanner sc = new Scanner(System.in);
+        return sc.nextLine();
     }
 }

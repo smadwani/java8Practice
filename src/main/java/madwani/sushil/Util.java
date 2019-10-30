@@ -45,7 +45,7 @@ public class Util {
     }
 
     public static void print1dArray(int[] array){
-        Arrays.stream(array).forEach(System.out::println);
+        Arrays.stream(array).forEach(x-> System.out.print(x + " "));
     }
 
     public static String readLine(){

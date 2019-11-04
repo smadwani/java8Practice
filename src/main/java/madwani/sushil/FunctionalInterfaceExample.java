@@ -9,9 +9,9 @@ public class FunctionalInterfaceExample {
 
     public static void main(String[] args) {
 
-        Predicate isNull = (value) -> value!=null;
+        Predicate isNotNull = (value) -> value!=null;
 
-        System.out.println(isNull.test("hello"));
+        System.out.println(isNotNull.test("hello"));
 
         Supplier<Double> randomGenerator = () -> Math.random();
 

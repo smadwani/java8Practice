@@ -57,8 +57,8 @@ public class DFS {
     public static void main(String[] args) {
         GraphService service = new GraphService();
         List<Graph> graphs = service.getSampleGraphs();
-        DFS bfs = new DFS();
-        bfs.dfs(graphs.get(0));
+        DFS dfs = new DFS();
+        dfs.dfs(graphs.get(0));
     }
 
 }

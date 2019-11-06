@@ -3,14 +3,19 @@ package madwani.sushil.service;
 import madwani.sushil.model.Graph;
 import madwani.sushil.model.Node;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 
 public class GraphService {
 
     public static void main(String[] args) {
         GraphService service = new GraphService();
-        service.print(service.getSampleGraph());
+        for (Graph g: service.getSampleGraphs()) {
+            System.out.println("Graph ..........");
+            service.print(g);
+        }
     }
 
     public void addEdge(Graph graph, Node src, Node dest) {
@@ -40,7 +45,9 @@ public class GraphService {
         }
     }
 
-    public Graph getSampleGraph(){
+    public List<Graph> getSampleGraphs(){
+
+        List<Graph> graphs = new ArrayList<>();
         Graph g = new Graph(false);
         Node _0 = new Node(0,"zero");
         Node _1 = new Node(1,"one");
@@ -57,6 +64,25 @@ public class GraphService {
         addEdge(g,_2,_4);
         addEdge(g,_2,_3);
         addEdge(g,_4,_5);
-        return g;
+
+        Graph g1 = new Graph(false);
+        Node _10 = new Node(0,"zero");
+        Node _11 = new Node(1,"one");
+        Node _12 = new Node(2,"two");
+        Node _13 = new Node(3,"three");
+        Node _14 = new Node(4,"four");
+        Node _15 = new Node(5,"five");
+
+        addEdge(g1,_10,_11);
+        addEdge(g1,_11,_12);
+        addEdge(g1,_12,_15);
+        addEdge(g1,_12,_14);
+        addEdge(g1,_13,_14);
+        addEdge(g1,_15,_11);
+        addEdge(g1,_14,_10);
+
+        graphs.add(g1);
+        graphs.add(g);
+        return graphs;
     }
 }

@@ -26,7 +26,7 @@ public class DFS {
             initializeVisited();
 
             // actual algo
-            // root node to start the bfs, push to queue
+            // root node to start the bfs
             Node root = new Node(3,"three");
             doDfs(g, root);
         }

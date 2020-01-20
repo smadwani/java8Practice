@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.function.Function;
 import java.util.function.IntFunction;
@@ -62,5 +63,16 @@ public class Util {
 
     public static int[] convertLineToIntArray(String line) {
        return Stream.of(line.split(" ")).mapToInt(Integer::parseInt).toArray();
+    }
+
+    public static Integer[] getSample1DArray(){
+        Random random = new Random();
+        int n = random.nextInt(5);
+        Integer[][] nums = {{1,5,7,5,4,3,2,9},
+                {1,8,10,12,4,13,2,19,2,1},
+                {1,15,17,15,14,13,12,19},
+                {10,50,70,50,40,30,20,90},
+                {21,25,25,25,27,25,24,23,22,29}};
+        return nums[n];
     }
 }
